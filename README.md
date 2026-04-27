@@ -86,7 +86,7 @@ INPUT: `(p, l_list)`
 
 OUTPUT: `associative array`
 * `Keys` - the rational primes from `l_list`
-* `Values` - `l : phi : v1 : e1 : v2 : e2` $\ell$ : $\varphi_\ell$ : v1 : $e_1$ : v2 : $e_2$, where $e_1, e_2$ are the Hecke eigenvalues, i.e. the roots of $\varphi_\ell$, corresponding to eigenvectors v1 and v2. 
+* `Values` - `l : phi : v1 : e1 : v2 : e2`, where $e_1, e_2$ are the Hecke eigenvalues, i.e. the roots of $\varphi_\ell$, corresponding to eigenvectors v1 and v2. 
 
 EXAMPLE:
 ```C
