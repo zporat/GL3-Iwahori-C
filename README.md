@@ -15,7 +15,7 @@ OUTPUT: `p : q : r : s`
 * `s` - the dimension of $H^3_\text{new}(\mathcal{I}(3, p), \mathbb{C})$
 
 EXAMPLE:
-```C
+```cpp
 > load "PATH/iwahori.m";
 Loading "iwahori.m"
 Loading "hecke_matrices.m"
@@ -44,7 +44,7 @@ OUTPUT: `associative array`
 * `Values` - the factorization of $\varphi_\ell^\text{full}$ for $E_\ell$ on $H_3(\mathcal{I}(3, p), \mathbb{C})$
 
 EXAMPLE:
-```C
+```cpp
 > load "PATH/iwahori.m";
 Loading "iwahori.m"
 Loading "hecke_matrices.m"
@@ -89,7 +89,7 @@ OUTPUT: `associative array`
 * `Values` - `l : phi : v1 : e1 : v2 : e2`, where $e_1, e_2$ are the Hecke eigenvalues, i.e. the roots of $\varphi_\ell$, corresponding to the fixed eigenvectors v1 and v2. 
 
 EXAMPLE:
-```C
+```cpp
 > load "PATH/iwahori.m";
 Loading "iwahori.m"
 Loading "hecke_matrices.m"
