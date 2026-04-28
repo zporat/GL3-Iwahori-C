@@ -75,7 +75,7 @@ The factored characteristic polynomial of T(l, 1) is...
 
 ### Space of Previously-Unseen Forms
 
-Using the data from `IwahoriHeckeFull(p, l_list)` combined with the results in Section 3, we can use the command `IwahoriHeckeNew(p, l_list, first_l, K, f)` to compute the characteristic polynomials $\varphi_\ell$ for the Hecke operators $E_\ell$ on $H^3_\text{new}(\mathcal{I}(3, p), \mathbb{C})$ for each $\ell$ in `l_list`.  The command returns a dictionary with values $\varphi_\ell$, as well as eigenvectors 
+Using the data from `IwahoriHeckeFull(p, l_list)` combined with the results in Section 3, we can use the command `IwahoriHeckeNew(p, l_list, first_l, K, f)` to compute the characteristic polynomials $\varphi_\ell$ for the Hecke operators $E_\ell$ on $H^3_\text{new}(\mathcal{I}(3, p), \mathbb{C})$ for each $\ell$ in `l_list`.  The command returns a dictionary and also outputs the factorizations, along with eigenvalues for fixed eigenvectors, in the terminal throughout the computation. 
 
 INPUT: `(p, l_list)`
 * `p` - a rational prime number
@@ -86,7 +86,7 @@ INPUT: `(p, l_list)`
 
 OUTPUT: `associative array`
 * `Keys` - the rational primes from `l_list`
-* `Values` - `l : phi : v1 : e1 : v2 : e2`, where $e_1, e_2$ are the Hecke eigenvalues, i.e. the roots of $\varphi_\ell$, corresponding to eigenvectors v1 and v2. 
+* `Values` - `l : phi : v1 : e1 : v2 : e2`, where $e_1, e_2$ are the Hecke eigenvalues, i.e. the roots of $\varphi_\ell$, corresponding to the fixed eigenvectors v1 and v2. 
 
 EXAMPLE:
 ```C
@@ -107,5 +107,3 @@ Now computing the action of Hecke operator T(l, 1) for l = 5...
 > EDict[3];
 3 : T^2 + 4*T + 19 : v1 : 2*w - 3 : v2 : -2*w - 1
 ```
-
-
